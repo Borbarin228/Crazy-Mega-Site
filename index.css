@@ -1,0 +1,44 @@
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.face{
+    display: flex;
+    align-items: center;
+    margin-top: -125px;
+    margin-left: 70px;
+}
+
+#main1{
+    display: flex;
+margin-top: 620px;
+margin-left: 30px;
+}
+
+#main2{
+    display: flex;
+    margin-top: 50px;
+    margin-left: -390px;
+}
+
+#main3{
+    z-index: -100;
+    display: flex;
+    margin-top: 170px;
+    margin-left:-100px;    
+}
+
+#bPart{
+    display: flex;
+    height: 193px;
+    width: 1519px;
+    margin-top: -120px;
+
+}
+
+.art{
+    background-color: black;
+}
