@@ -5,7 +5,7 @@
     <button class = "formClose"><img src="assets/close.png" alt=""></button>
     <div >
       
-        <form method ="POST" action="reg.php" class = "content">
+        <form method ="POST" action="auth.php" class = "content">
         <p><b>ВХОД</b></p>
           <input class="box" type="text" name="login" id="login" placeholder="Логин" require>
           <input class="box" type="password" name="password" id="password" placeholder="Пароль" require>

@@ -1,3 +1,5 @@
+<?session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +15,21 @@
         <a href="#art">ТВОРЧЕСТВО</a>
         <a href="#concert">КУПИТЬ БИЛЕТЫ</a>
         <a href="#merch">МЕРЧ</a>
-        <p><?php  $_SESSION['nickname']?></p>
+        
     </div>
-
+    <?if($_SESSION["login"]!==""){?>
     <div class = "header_img">
-        <button class="regButton" id = "reg"></button>
-    </div>
+       
+    <p class = "usrname">ПРОФИЛЬ: <?php echo( $_SESSION['login'])?></p>
+        <form action="exit.php">
+    <button  class="exitButton"></button>
+    </form>
+</div>
+    <?}else{?>
+    <div class = "header_img">
+           <button class="regButton" id = "reg"></button>
+       </div>
+    <?}?>
 </div>
 
 </header>

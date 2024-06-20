@@ -9,7 +9,7 @@
 .face{
     display: flex;
     align-items: center;
-    margin-top: -125px;
+    margin-top: -137px;
     margin-left: 70px;
 }
 
@@ -58,7 +58,7 @@ margin-left: 30px;
 
 .albomes{
     display: flex;
-    padding-right: 200px;
+    padding-right: 20px;
     margin-left: -200px;
 }
 
@@ -409,6 +409,7 @@ opacity: 1;
 }
 
 .sendbtn{
+    z-index: 1999;
     width: 300px;
     height: 70px;
     background-color: rgb(0, 0, 0);
@@ -417,6 +418,7 @@ opacity: 1;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     border: none;
+    
 }
 
 .sendbtn:hover{

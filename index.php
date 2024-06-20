@@ -1,3 +1,4 @@
+<?session_start()?>;
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -35,87 +36,99 @@
 <div class = "art" id = "art">
 
     <p class = "artHead">ТВОРЧЕСТВО</p>
+    
+        <div class = "albomes">
 
-    <div class = "albomes">
+            <form method = "POST" action="raiting.php" class = "albomes">
 
-        <div class = "groupAlbomes">
-            <button class = "payday"></button>
-            <div class = "ratingPanel">
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingP">
-                <span class = "bad"></span>
-            </label>
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingP">
-                <span class = "good"></span>
-            </label>
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingP">
-                <span class = "perfect"></span>
-            </label>
+            <div class = "groupAlbomes">
+                <button class = "payday"></button>
+
+
+
+                <div class = "ratingPanel">
+                    <label class = "label" >
+                        <input type="radio" class = "radio" name = "ratingP" value = "1">
+                        <span class = "bad"></span>
+                    </label>
+                    <label class = "label" >
+                        <input type="radio" class = "radio" name = "ratingP" value = "2"> 
+                        <span class = "good"></span>
+                    </label>
+                     <label class = "label" >
+                        <input type="radio" class = "radio" name = "ratingP" value = "3">
+                         <span class = "perfect"></span>
+                    </label>
+                </div>
+
+
+
+                <button class = "moodblood"></button>
+
+                <div class = "ratingPanel">
+                    <label class = "label" >
+                        <input type="radio" class = "radio" name = "ratingM" value = "1">
+                        <span class = "bad"></span>
+                    </label>
+                    <label class = "label" >
+                        <input type="radio" class = "radio" name = "ratingM" value = "2">
+                        <span class = "good"></span>
+                    </label>
+                    <label class = "label" >
+                        <input type="radio" class = "radio" name = "ratingM" value = "3">
+                        <span class = "perfect"></span>
+                    </label>
+                </div>
+
             </div>
 
-            <button class = "moodblood"></button>
-            <div class = "ratingPanel">
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingM">
-                <span class = "bad"></span>
-            </label>
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingM">
-                <span class = "good"></span>
-            </label>
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingM">
-                <span class = "perfect"></span>
-            </label>
+            <div class = "groupAlbomes">
+                <button class = "antiwrld"></button>
+
+                    <div class = "ratingPanel">
+                        <label class = "label" >
+                            <input type="radio" class = "radio" name = "ratingA" value = "1">
+                            <span class = "bad"></span>
+                        </label>
+                        <label class = "label" >
+                            <input type="radio" class = "radio" name = "ratingA" value = "2">
+                            <span class = "good"></span>
+                        </label>
+                        <label class = "label" >
+                            <input type="radio" class = "radio" name = "ratingA" value = "3">
+                            <span class = "perfect"></span>
+                        </label>
+                    </div>
+
+                    <button class = "raw"></button>
+                    <div class = "ratingPanel">
+                        <label class = "label" >
+                            <input type="radio" class = "radio" name = "ratingR" value = "1">
+                            <span class = "bad"></span>
+                        </label>
+                        <label class = "label" >
+                            <input type="radio" class = "radio" name = "ratingR" value = "2">
+                            <span class = "good"></span>
+                        </label>
+                        <label class = "label" >
+                            <input type="radio" class = "radio" name = "ratingR" value = "3">
+                            <span class = "perfect"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
->
-        </div>
-
-        <div class = "groupAlbomes">
-            <button class = "antiwrld"></button>
-
-            <div class = "ratingPanel">
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingA">
-                <span class = "bad"></span>
-            </label>
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingA">
-                <span class = "good"></span>
-            </label>
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingA">
-                <span class = "perfect"></span>
-            </label>
-            </div>
-
-            <button class = "raw"></button>
-            <div class = "ratingPanel">
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingR">
-                <span class = "bad"></span>
-            </label>
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingR">
-                <span class = "good"></span>
-            </label>
-            <label class = "label" >
-                <input type="radio" class = "radio" name = "ratingR">
-                <span class = "perfect"></span>
-            </label>
-            </div>
-        </div>
-
-    </div>
+            <button class = "sendbtn" type = "submit">ОТПРАВИТЬ ОЦЕНКУ</button>
+            </form>
+    
+            
+        
 
     <div class = "urls">
         <button class = "vkmsc"></button>
         <button class = "applemsc"></button>
         <button class = "youtubemsc"></button>
         <button class = "yandexmsc"></button>
-        <button class = "sendbtn" >ОТПРАВИТЬ ОЦЕНКУ</button>
+        
     </div>
 
 </div>
