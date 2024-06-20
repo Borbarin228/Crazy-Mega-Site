@@ -1,0 +1,114 @@
+.modal {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    top: -1000px;
+  
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding: 60px 15px;
+  }
+   
+  .form{
+    width: 100%;
+    max-width: 658px;
+    height: 534px;
+    padding: 20px;
+    background-image: url("assets/Frame 15.png");
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 5px 15px black;
+  }
+   
+  .formClose {
+    background: #ff0000;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    background: none;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+  }
+   
+  .formClose:hover {
+    transition: .3s;
+    transform: rotate(180deg);
+  }
+   
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.content>p{
+    font-size: 48px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.box{
+    width: 569px;
+    height: 57px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    font-size: 24px;
+}
+
+.enteryBtn{
+    max-width: 219px;
+    height: 49px;
+    border-radius: 15px;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    
+    padding-right: 80px;
+    padding-left: 70px;
+    align-items: center;
+
+    
+}
+
+.modal_active {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+  }
+
+.hidden {
+    overflow: hidden;
+}
+
+.content>a{
+  font-size: 24px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content>a:hover{
+  transform:translate(-1px, -1px);
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.675));
+  letter-spacing: 2px;
+}

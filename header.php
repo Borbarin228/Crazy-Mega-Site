@@ -10,14 +10,14 @@
 
 <div class = "container">
     <div class = "header_txt">
-        <a href="">ИНФОРМАЦИЯ</a>
-        <a href="">ТВОРЧЕСТВО</a>
-        <a href="">КУПИТЬ БИЛЕТЫ</a>
-
+        <a href="#art">ТВОРЧЕСТВО</a>
+        <a href="#concert">КУПИТЬ БИЛЕТЫ</a>
+        <a href="#merch">МЕРЧ</a>
+        <p><?php  $_SESSION['nickname']?></p>
     </div>
 
     <div class = "header_img">
-        <button class="regButton"></button>
+        <button class="regButton" id = "reg"></button>
     </div>
 </div>
 
