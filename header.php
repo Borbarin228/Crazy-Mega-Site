@@ -12,9 +12,9 @@
 
 <div class = "container">
     <div class = "header_txt">
-        <a href="#art">ТВОРЧЕСТВО</a>
-        <a href="#concert">КУПИТЬ БИЛЕТЫ</a>
-        <a href="#merch">МЕРЧ</a>
+        <a href="http://crazy-mega-site/#art">ТВОРЧЕСТВО</a>
+        <a href="http://crazy-mega-site/#concert">КУПИТЬ БИЛЕТЫ</a>
+        <a href="http://crazy-mega-site/#merch">МЕРЧ</a>
         
     </div>
     <?if($_SESSION["login"]!==""){?>
